@@ -1,0 +1,21 @@
+endpoints:
+  - name: completions
+    endpoint_type: llm/v1/completions
+    model:
+      provider: openai
+      name: meta-llama/llama-3.2-3b-instruct:free
+      config:
+        openai_api_base: https://openrouter.ai/api/v1
+        openai_api_key: $OPENAI_API_KEY
+    limit:
+      renewal_period: minute
+      calls: 10
+
+  - name: chat
+    endpoint_type: llm/v1/chat
+    model:
+      provider: openai
+      name: google/gemini-flash-1.5-8b-exp
+      config:
+        openai_api_base: https://openrouter.ai/api/v1
+        openai_api_key: $OPENAI_API_KEY

@@ -1,0 +1,23 @@
+[project]
+name = "mlops-llmops-mlflow"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.1.1",
+    "black>=24.10.0",
+    "huggingface-hub>=0.26.2",
+    "isort>=5.13.2",
+    "jupyterlab-code-formatter>=3.0.2",
+    "jupyterlab>=4.3.0",
+    "mlflow[extras,genai]>=2.17.2",
+    "openai>=1.54.4",
+    "seaborn>=0.13.2",
+    "tenacity>=9.0.0",
+    "tensorflow-datasets>=4.9.7",
+    "tensorflow>=2.18.0",
+    "tiktoken>=0.8.0",
+    "torch>=2.5.1",
+    "transformers>=4.46.2",
+]
